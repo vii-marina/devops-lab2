@@ -62,4 +62,24 @@ Flags:
 -dry-run    show actions without changing files
 -verbose    print detailed actions
 
+Git hooks
 
+Hooks are configured in .git/hooks:
+
+pre-commit
+
+Blocks commits if staged files contain trailing whitespace
+
+Runs Python syntax check (py_compile) for staged .py files
+
+pre-push
+
+Verifies bash scripts are executable
+
+Checks Python scripts show help without crashing
+
+Builds the Go CLI tool
+
+post-commit
+
+Automatically runs backup.sh to create a tar.gz backup of the repository into backups_git/
