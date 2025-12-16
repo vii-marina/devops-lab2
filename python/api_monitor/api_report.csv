@@ -1,0 +1,2 @@
+url,ok,status,response_time_ms,checked_at,error
+https://example.com/this-page-does-not-exist,False,404,192.48,2025-12-16T18:29:46.551097,HTTP Error 404: Not Found
